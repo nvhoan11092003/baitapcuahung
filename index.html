@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- menu -->
+        <nav class="menu">
+            <img src="images/logo.png" alt="logo">
+            <ul class="main-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- nội dung 1 -->
+        <div class="content1">
+            <img src="images/anhdaidien.png" class="avata" alt="">
+            <div class="content1-text">
+                <h3>My name Hung</h3>
+                <h1>HUNGMAYCHEM</h1>
+                <h2>A UX / UI designer, product designer, content creator and creative director.</h2>
+                <h4>Of course, there’s so much more to me than just a few fancy titles. Scroll down and get to know me.
+                </h4>
+            </div>
+        </div>
+
+        <!-- nội dung 2 -->
+        <div class="content2">
+            <div class="flex-box-second">
+                <img src="images/camera.png" alt="camera">
+                <h2>UI design</h2>
+                <h4>User interface design, user experience
+                    design, user research.</h4>
+                <button class="button-primary">load more</button>
+            </div>
+            <div class="flex-box-primary">
+                <img src="images/lich.png" alt="camera">
+                <h2>Product Design</h2>
+                <h4>User interface design, user experience
+                    design, user research.</h4>
+                <button class="button-second">load more</button>
+            </div>
+            <div class="flex-box-second">
+                <img src="images/thuocke.png" alt="camera">
+                <h2>Branding</h2>
+                <h4>User interface design, user experience
+                    design, user research.</h4>
+                <button class="button-primary">load more</button>
+            </div>
+        </div>
+
+        <!-- nội dung 3 -->
+        <div class="content3">
+            <h1 class="title">MY WORK</h1>
+            <h3 class="title-page">AWESOME PROJECTS</h3>
+            <nav class="">
+                <ul class="menu-second">
+                    <li><p id="all">ALL</p></li>
+                    <li><p id="graphic">GRAPHIC</p></li>
+                    <li><p>VIDEOS</p></li>
+                    <li><p>WEDDESIGN</p></li>
+                    <li><p>BRANDING</p></li>
+                </ul>
+            </nav>
+            <div class="grid">
+                <div class="grid-box">
+                    <img src="images/anh1.png" alt="" id="anh1">
+                </div>
+                <div class="grid-box">
+                    <img src="images/anh2.png" alt="" id="anh2">
+                </div>
+                <div class="grid-box">
+                    <img src="images/anh3.png" alt="" id="anh3">
+                </div>
+                <div class="grid-box">
+                    <img src="images/anh4.png" alt="" id="anh4">
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.1.js"
+                integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous">
+            </script>
+            <script>
+                $('#graphic').on({
+              'click': function(){
+             $('#anh1').attr('src','images/anh5.jfif');
+             $('#anh2').attr('src','images/anh6.jfif');
+             $('#anh3').attr('src','images/anh7.jfif');
+             $('#anh4').attr('src','images/anh8.jfif');
+                 }
+              });
+
+              
+              $('#all').on({
+              'click': function(){
+             $('#anh1').attr('src','images/anh1.png');
+             $('#anh2').attr('src','images/anh2.png');
+             $('#anh3').attr('src','images/anh3.png');
+             $('#anh4').attr('src','images/anh4.png');
+                 }
+              });
+
+            </script>
+        </div>
+        <div class="menu-second">
+            <button class="button-second">load more</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="images/footer.png" alt="">
+    </footer>
+
+</body>
+
+</html>
